@@ -1,0 +1,13 @@
+ENV_NAME: 'Unimal-v0'
+OUT_DIR: './output'
+ENV:
+  MODULES: ["Agent", "Terrain"]
+  WALKER: "./derl/envs/assets/unimal_ant.xml"
+  TASK: "locomotion"
+  KEYS_TO_KEEP: ["proprioceptive", "hfield"]
+TERRAIN:
+  SIZE: [50, 50, 1]
+  START_FLAT: 3
+  CENTER_FLAT: 0
+  TYPES: ["curve_slope", "steps", "rugged_square"]
+  BOUNDARY_WALLS: true
