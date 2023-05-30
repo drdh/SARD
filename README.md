@@ -1,7 +1,7 @@
 # SARD
 This repo contains the official implementation of our paper:
 
-**Symmetry-Aware Robot Design with Structured Subgroups**. (Submitted to ICML 2023)
+**Symmetry-Aware Robot Design with Structured Subgroups**. (ICML 2023)
 
 
 # Installation 
