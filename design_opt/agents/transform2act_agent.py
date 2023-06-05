@@ -252,7 +252,6 @@ class Transform2ActAgent(AgentPPO):
                 self.policy_net.group.set_cur_subgroup_name(name)
                 _, log_sym = self.sample(1000, mean_action=False)
                 value_dict[name] = log_sym.avg_episode_reward
-                self.total_time_steps += log_sym.num_steps
             self.policy_net.group.update_all_values(value_dict)
             self.policy_net.group.restore_cur_subgroup_name()
 
